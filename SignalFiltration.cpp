@@ -113,8 +113,10 @@ void checkVoltageThreshold(float value) {
 }
 
 // --- Main Function ---
-int main() {
-    
+// Demonstrates usage of both filters
+int main() 
+{
+
     AccurateSMA<float, 5> smaFilter; // 5-sample SMA filter
     FilterEMA<float, 20> emaFilter; // Filters noise using a 20-sample window
 
