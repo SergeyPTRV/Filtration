@@ -118,7 +118,7 @@ int main()
 {
 
     AccurateSMA<float, 5> smaFilter; // 5-sample SMA filter
-    FilterEMA<float, 5> emaFilter; // Filters noise using a 5-sample window
+    FilterEMA<float, 20> emaFilter; // Filters noise using a 20-sample window
 
     cout << "--- Starting Data Stream (Pull Model) ---\n";
 
